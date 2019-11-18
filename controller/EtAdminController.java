@@ -18,8 +18,6 @@ public class EtAdminController {
     public String toHello(HttpServletRequest request) {
         List<EtAdmin> admin = service.getAll();
         System.out.println(admin);
-        System.out.println(admin);
-        System.out.println(admin);
         request.setAttribute("admin",admin);
         return "index";
     }
